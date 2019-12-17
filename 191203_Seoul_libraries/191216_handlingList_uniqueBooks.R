@@ -82,7 +82,7 @@ View(final_list)
 
 # 2. RDS 파일로 저장 & 불러와서 확인
 
-file_name = paste('2018', gu, 'library data.rds')
+file_name = paste('2018', gu, 'library cumsum data.rds')
 saveRDS(final_list, file = file_name)
 
 final_list_check = readRDS(file_name)
