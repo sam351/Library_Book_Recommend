@@ -80,6 +80,7 @@ for (tmp_lib in names(sb_lib_list)) {
 View(final_list)
 
 
+
 # 2. RDS 파일로 저장 & 불러와서 확인
 
 file_name = paste('2018', gu, 'library cumsum data.rds')
@@ -88,30 +89,4 @@ saveRDS(final_list, file = file_name)
 final_list_check = readRDS(file_name)
 identical(final_list, final_list_check)  # TRUE
 View(final_list_check)
-
-
-
-
-
-# ----------------- 지워 -------------------
-
-
-
-
-
-
-
-
-list_len = length(tmp_list)
-str(tmp_list[[ 12-list_len+2 ]])
-str(tmp_list[[ 12 ]])
-
-# 1. 
-## 2월~12월 혹은 8월~12월 동안 반복
-for (idx in c( (12-list_len+2) : 12)) {
-  
-}
-
-
-
 
