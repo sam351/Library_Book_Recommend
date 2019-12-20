@@ -11,6 +11,12 @@ sb_monthly_list = readRDS(file_name)  # 수정할 데이터
 file_name2 = '2018 seongbook library cumsum data (updated 191218).rds'
 sb_cumsum_list = readRDS(file_name2)
 
+# 데이터 검토
+a = sb_cumsum_list$성북정보도서관[[12]]
+table(is.na(a$도서명), is.na(a$대출건수))
+a = sb_cumsum_list$아리랑정보도서관[[12]]
+table(is.na(a$도서명), is.na(a$대출건수))
+
 
 # 성북정보도서관, 아리랑정보도서관에서 수정된 sb_cumsum_list 활용해 sb_monthly_list 수정
 
