@@ -1,4 +1,5 @@
 setwd("C:/Users/student/Desktop/sam/팀 프로젝트 (메인)")
+rm(list = ls())
 library(dplyr)
 library(ggplot2)
 
@@ -63,7 +64,7 @@ plot_df = data.frame(lib = names, ratio=big_ratio_vec) %>%
   arrange(desc(ratio))
 ggplot(data = plot_df, aes(x=reorder(lib, -ratio), y=ratio)) +
   geom_col() +
-  labs(title="도봉구 도서관별 버려진 도서 비율 (45% 이상)",
+  labs(title="도봉구 도서관별 누적 대출건수 2건 이하 도서 비율 (45% 이상)",
        y = '대출건수 2건 이하 도서 비율(%)',
        x = '도서관')
 
@@ -92,7 +93,7 @@ plot_df = data.frame(lib = names, ratio=big_ratio_vec) %>%
   arrange(desc(ratio))
 ggplot(data = plot_df, aes(x=reorder(lib, -ratio), y=ratio)) +
   geom_col() +
-  labs(title="강북구 도서관별 버려진 도서 비율 (20% 이상)",
+  labs(title="강북구 도서관별 누적 대출건수 2건 이하 도서 비율 (20% 이상)",
        y = '대출건수 2건 이하 도서 비율(%)',
        x = '도서관') +
   ylim(0, 100)
