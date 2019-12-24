@@ -1,4 +1,4 @@
-setwd('C:/Users/student/Desktop/sam/팀 프로젝트 (메인)')
+# setwd()
 rm(list = ls())
 
 library(dplyr)
