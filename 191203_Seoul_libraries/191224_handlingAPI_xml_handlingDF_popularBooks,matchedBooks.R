@@ -4,7 +4,7 @@ rm(list = ls())
 library(dplyr)
 library(XML)
 api_key = "인증키"
-options(scipen = 99)
+options(scipen = 99)  # 지수표기법 대신 숫자 그대로 표시
 
 
 # 1. ISBN아동_2019년_9-11월_아리랑어린이도서관 인기대출도서 10개 데이터 로드
