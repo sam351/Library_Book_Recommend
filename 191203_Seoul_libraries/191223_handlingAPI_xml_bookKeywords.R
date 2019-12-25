@@ -33,9 +33,7 @@ str(tmp_res_list)
 # 1. scale-up - 200개 도서에 대해 키워드&가중치 목록 수집
 res_list = list()
 
-# for (idx in 1:nrow(pop_books)) {
-
-for (idx in 10:20) {
+for (idx in 1:nrow(pop_books)) {
   tmp_ISBN = pop_books$ISBN[idx]
   tmp_bookname = pop_books$서명[idx]
   
